@@ -11,4 +11,4 @@ let user = {
 
 console.log(user.name);
 console.log(id);
-console.log(user.getId);
+console.log(user.getId());
