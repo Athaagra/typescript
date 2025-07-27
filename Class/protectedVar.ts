@@ -1,0 +1,28 @@
+class Admin extends User{
+  isAdmin: boolean = true;
+  usersReporting: number;
+
+  constructor(
+    name: string,
+    email: string,
+    phone: number,
+    usersReporting: number,
+    lastName?:string
+  ){
+    super(name, email, phone, lastName);
+    this.usersReporting = usersReporting;
+  }
+
+  public printName(){
+    console.log(this.name);
+  }
+
+  public printNumber(){
+    console.log(this.phone);
+  }
+}
+const user: User = new User("John","john@email.com");
+const admin: Admin = new Admin("Mark","mark@email.com", 11);
+
+console.log(user.phone);
+console.log(admin.phone);
