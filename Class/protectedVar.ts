@@ -1,3 +1,19 @@
+class User {
+  public name: string;
+  readonly email: string;
+  lastname?: string;
+  
+  constructor(name: string, email: string, lastname?:string){
+    this.name = name;
+    this.email = email;
+    this.lastname = lastname;
+  }
+
+  public greet(){
+    return `Hello ${this.name}`;
+  }
+}
+
 class Admin extends User{
   isAdmin: boolean = true;
   usersReporting: number;
@@ -8,7 +24,8 @@ class Admin extends User{
     phone: number,
     usersReporting: number,
     lastName?:string
-  ){
+  )
+  {
     super(name, email, phone, lastName);
     this.usersReporting = usersReporting;
   }
