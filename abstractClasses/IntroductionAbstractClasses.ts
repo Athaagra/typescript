@@ -27,7 +27,7 @@ abstract class Department {
     });
   }*/
   //call this method from child classes that are implememented
-  public abstract printHolidays(message:string):void;
+  public abstract printHolidays():void;
 }
 
 class ItDeprtment extends Department {
