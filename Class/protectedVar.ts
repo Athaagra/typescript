@@ -34,8 +34,12 @@ class Admin extends User{
     console.log(this.name);
   }
 
-  public printNumber(){
+  protected printNumber(){
     console.log(this.phone);
+  }
+
+  public useProtectedPhone() {
+    this.printNumber();
   }
 }
 const user: User = new User("John","john@email.com");
@@ -45,3 +49,4 @@ console.log(user.phone);
 console.log(admin.phone);
 console.log(admin.name);
 admin.printNumber();
+admin.useProtectedPhone();
