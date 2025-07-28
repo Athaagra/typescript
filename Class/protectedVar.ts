@@ -12,6 +12,9 @@ class User {
   public greet(){
     return `Hello ${this.name}`;
   }
+  public printPhone(){
+    console.log(this.phone);
+  }
 }
 
 class Admin extends User{
@@ -50,3 +53,4 @@ console.log(admin.phone);
 console.log(admin.name);
 admin.printNumber();
 admin.useProtectedPhone();
+user.printPhone();
