@@ -56,3 +56,6 @@ console.log(admin.name);
 admin.printNumber();
 admin.useProtectedPhone();
 user.printPhone();
+
+console.log(user.greet());
+console.log(admin.greet());
