@@ -30,7 +30,7 @@ abstract class Department {
   public abstract printHolidays():void;
 }
 
-class ItDeprtment extends Department {
+class ItDepartment extends Department {
   protected holidays:Holidays = [];
 
   constructor(){
