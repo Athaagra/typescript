@@ -9,8 +9,8 @@ class User {
     this.lastname = lastname;
   }
 
-  public greet(){
-    return `Hello ${this.name}`;
+  public greet(): string {
+    return `Hello ${this.name}! I am the admin`;
   }
   public printPhone(){
     console.log(this.phone);
@@ -32,7 +32,9 @@ class Admin extends User{
     super(name, email, phone, lastName);
     this.usersReporting = usersReporting;
   }
-
+  public greet(): string {
+    return `Hello ${this.name}! I am the admin`;
+  }
   public printName(){
     console.log(this.name);
   }
