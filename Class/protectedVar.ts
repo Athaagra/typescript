@@ -43,3 +43,4 @@ const admin: Admin = new Admin("Mark","mark@email.com", 11);
 
 console.log(user.phone);
 console.log(admin.phone);
+console.log(admin.name);
