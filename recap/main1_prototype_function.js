@@ -57,4 +57,21 @@ const user = new User('John','john@email.com');
 user.addPoint();
 user.prototype.addPoint();
 
+//inheritance 
+function AdminUser(name,email,peopleReporting){
+    User.apply(this, [name,email]);
+    this.peopleReporting = peopleReporting;
+}
+AdminUser.prototype = Object.create(User.prototype);
+AdminUser.protoype.updatePeopleReporting = function(
+  newNumber
+){
+  this.peopleReporting = newNumber;
+};
+
+const admin = new AdminUser('Mark','mark@email.com',1);
+console.log(admin);
+
+
+
 console.log(user);
