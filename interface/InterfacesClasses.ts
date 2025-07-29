@@ -42,6 +42,17 @@ class Car
   ){}
 }
 
+class Truck
+  implements
+    Automobile<string, AutomobileBrands, AutomobileColors>
+{
+  public type: string = "truck";
+  constructor(
+   public brand: AutomobileBrands,
+   public colors: AutomobileColors[],
+   public description: string
+  ){}
+}
 const ferrari: Car = new Car (
   AutomobileBrands.ferrari,
   colors: [AutomobileColors.red, Automobile.black],
