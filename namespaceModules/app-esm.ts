@@ -1,4 +1,4 @@
-import {MathUtils} from "./utils/math-utils-esm";
+import {MathUtils} from "./utils/math-utils-esm.js";
 
 let sum = MathUtils.add(5,2);
 
