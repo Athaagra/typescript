@@ -1,5 +1,6 @@
 namespace MathUtils {
   export function add(a:number, b:number){
+    CommonUtils.log(`Adding ${a} and ${b}`);
     return a + b;
   }
   export function subtract(a:number, b:number){
