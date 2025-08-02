@@ -1,3 +1,3 @@
-import printHello = require("./strings");
+const printHello = require("./strings");
 
 printHello();
