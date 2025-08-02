@@ -1,6 +1,6 @@
 import { CommonUtils } from "./common-utils-esm";
 
-namespace MathUtils {
+export class MathUtils {
   export function add(a:number,b:number){
     CommonUtils.log(`Adding ${a} and ${b}`);
     return a+b;
