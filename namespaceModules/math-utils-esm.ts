@@ -1,4 +1,4 @@
-import { CommonUtils } from "./common-utils-esm";
+import { CommonUtils } from "./common-utils-esm.js";
 
 export class MathUtils {
   export function add(a:number,b:number){
