@@ -1,3 +1,4 @@
+////<reference path="utils/common-utils.ts" />
 namespace MathUtils {
   export function add(a:number, b:number){
     CommonUtils.log(`Adding ${a} and ${b}`);
